@@ -1,0 +1,269 @@
+.bicicleta_ninios {
+    display: flex;
+    flex-direction: column;
+
+    .bicicleta {
+        width: 100%;
+    }
+
+    .welcome {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-image: url("../img/img_series/fondo_rojo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0;
+        padding: 35px 30px;
+
+        p {
+            color: $color-textos;
+            text-align: left;
+            font-weight: lighter;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.bicicleta_will {
+    display: flex;
+    flex-direction: column;
+
+    .will {
+        width: 100%;
+    }
+
+    .rumors {
+
+        display: flex;
+        align-items: center;
+        background-image: url('../img/img_series/fondo_azul.png');
+        margin: 0%;
+        padding: 35px 30px;
+
+        p {
+            color: $color-textos;
+            text-align: right;
+            font-weight: lighter;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.hiding {
+    display: none;
+}
+
+.laboratory {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.strange_girl {
+    .girl {
+
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+
+        background-image: url('../img/img_series/fondo_rojo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+        padding: 35px 30px;
+        p {
+            color: $color-textos;
+            text-align: left;
+            font-weight: lighter;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    .eleven {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.trailer_video{
+    background-image: url("../img/img_series/fondo_azul.png");
+    
+    .trailer{
+        padding-top: 30px;
+        color: $color-textos;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 25px;
+        line-height: 24px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .video{
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 320px;
+            height: 170px;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .trailer_video{
+        .video{
+            iframe{
+                width: 570px;
+                height: 320px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .bicicleta_ninios {
+
+        .bicicleta {
+            order: 2;
+            overflow: hidden;
+        }
+
+        .welcome {
+            justify-content: center;
+            order: 1;
+            background: none;
+
+            p {
+                text-align: center;
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 41px;
+            }
+        }
+    }
+
+    .bicicleta_will {
+        flex-direction: row;
+        width: 100%;
+
+        .will {
+            width: 60%;
+            order: 2;
+        }
+
+        .rumors {
+            order: 1;
+
+            p {
+                color: $color-textos;
+                text-align: left;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: 41px;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+
+    .hiding {
+        display: flex;
+        background-image: url('../img/img_series/fondo_bosque.jpg');
+        background-position: bottom center;
+        justify-content: center;
+        padding: 30px 0;
+
+        h2 {
+            width: 500px;
+            font-family: 'Montserrat';
+            color: $color-textos;
+            font-style: bold;
+            font-weight: 600;
+            font-size: 43px;
+            line-height: 70px;
+            text-align: center;
+            letter-spacing: -0.3px;
+        }
+    }
+
+    .strange_girl{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 600px;
+
+
+        .eleven {
+
+            order: 2;
+        }
+
+        .girl {
+            order: 1;
+            width: 60%;
+
+            p {
+                color: $color-textos;
+                text-align: left;
+                font-weight: 500;
+                font-size: 34px;
+                line-height: 41px;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    
+
+    }
+
+    .trailer_video{
+        background-image: url("../img/img_series/fondo_azul.png");
+    }
+
+    .trailer{
+        padding-top: 30px;
+        color: $color-textos;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 25px;
+        line-height: 24px;
+        font-family: 'Montserrat', sans-serif;
+
+        
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+
+    }
+
+    .trailer_video{
+        .video{
+            iframe{
+                width: 760px;
+                height: 410px;
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,147 @@
+
+.containerHome {
+    height: 100vh;
+    display: grid;
+
+    background-image: url("../img/backgroundHome.jpg");
+    background-size: cover;
+    background-position: bottom;
+
+
+    /*grid template areas */
+
+    grid-template-areas:
+        "header"
+        "welcomeHome"
+        "redesSociales"
+        "footer";
+
+    .welcomeHome {
+        grid-area: welcomeHome;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        &_logo {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 220px;
+                padding-bottom: 10px;
+                animation-duration: 4s;
+                animation-name: aparecer; 
+            }
+        }
+
+        &_text {
+            h1 {
+                padding: 3px;
+                font-weight: lighter;
+                font-size: 20px;
+            }
+        }
+
+        &_watch {
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                text-decoration: none; color: #ccc;
+
+
+
+            }
+
+            img {
+                height: 26px;
+                margin-right: 15px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                filter: drop-shadow(1px 1px);
+            }
+
+            h2 {
+                display: inline;
+                font-weight: lighter;
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+                
+            }
+        }
+
+        @keyframes aparecer {
+            0% {
+            opacity: 0; }
+            100% {
+            opacity: 1; } }
+    }
+
+    .redesSociales {
+        grid-area: redesSociales;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+        &_list {
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                margin: 0 10px;
+                
+                img {
+                    transition: 1s;
+                    height: 30px;
+                    margin: 3px;
+                    
+                    &:hover {
+                        transform: scale(1.2);
+                        filter: drop-shadow(1px 1px);
+                    }
+                }
+            }
+        }
+    }
+
+    /**CORRECIONES NAV BOOTSTRAP */
+    .nav-header{
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 786px){
+    .containerHome {
+        background-position: center top;
+        /*grid template areas */
+    
+        grid-template-areas:
+            "header header"
+            "welcomeHome redesSociales"
+            "footer footer";
+
+            .redesSociales{
+                justify-content: flex-end;
+                align-items: center;
+                &_list{
+                    flex-direction: column;
+                }
+            }
+    }
+}

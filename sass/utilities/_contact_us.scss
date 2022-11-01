@@ -1,0 +1,49 @@
+
+.commentsForm{
+    text-align: center;
+    color: $color-textos;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-textos;
+    font-family: 'Montserrat', sans-serif;
+
+    legend{
+        padding: 10px;
+    }
+
+    .name{
+        margin: 10px;
+        border-radius: 7px;
+        padding-left: 10px;
+    }
+
+    .mail{
+        margin: 10px;
+        margin-left: 20px;
+        border-radius: 7px;
+        padding-left: 10px;
+    }
+}
+
+
+.botones{
+    @include botones (120px, 45px);
+    margin-bottom: 60px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_footer{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}

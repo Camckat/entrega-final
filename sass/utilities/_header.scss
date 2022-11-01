@@ -1,0 +1,46 @@
+
+
+header {
+    grid-area: header;
+    img{
+        height: 120px;
+    }
+
+    .nav-header {
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    .navbar-nav {
+    width: 100%;
+    }
+
+    .show, .collapsing{
+        display: flex;
+        justify-content: flex-end;
+        .navbar-nav {
+            width: 100%;
+            justify-content: flex-end;
+            text-align: center;
+            li{
+    
+                background-color: rgba(204, 204, 204, 0.192);
+            }
+        }
+
+        }
+}
+
+
+@media screen and (min-width: 576px) {
+    header {
+        padding: 0 70px;
+        img{
+            height: 160px;
+        }
+        .navbar-nav {
+            width: 100%;
+            justify-content: center;
+            }
+    }
+}

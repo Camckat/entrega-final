@@ -1,0 +1,33 @@
+.the_80s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            width: 300px;
+            margin: 20px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .the_80s {
+        .cards {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            max-width: 1024px;
+
+            .card {
+                width: 30%;
+                height: 400px;
+            }
+        }
+    }
+}

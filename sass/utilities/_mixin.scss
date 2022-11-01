@@ -1,0 +1,11 @@
+@mixin botones ($widht, $height){
+    width: $widht;
+    height: $height;
+    font-weight: bold;
+    border-radius: 7px;
+    border-color: rgb(116, 113, 126);
+    background-color: rgb(116, 113, 126);
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 2px rgb(21, 14, 156);
+}
